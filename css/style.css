@@ -204,6 +204,7 @@ main .landing {
 
 #course {
   padding-top: 3em;
+  padding-bottom: 3em;
   background: url(../img/blbck.png);
   background-position: center;
   background-size: cover;
@@ -374,7 +375,7 @@ main .landing {
     font-size: 1.2em;
   }
 
-  
+
 
   .btn-enrol-a {
     color: #367df0;
