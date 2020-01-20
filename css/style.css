@@ -215,7 +215,6 @@ main .landing {
   background: url(../img/blbck.png);
   background-position: center;
   background-size: cover;
-  /* height: 25vh; */
 }
 
 #join .card {
@@ -228,7 +227,6 @@ main .landing {
   color: #fff;
 }
 .card .card-body .value{
-  /* border: solid 2px #d3330c; */
   color: #d3330c;
   padding: 10px 20px;
   font-size: 1.8em;
@@ -342,14 +340,13 @@ button {
   header .container nav .links {
     text-decoration: none;
     color: #fff;
-    margin: 0 0.4em;
+    margin: 3em 1em;
     text-transform: uppercase;
     font-size: 0.8em;
   }
   header nav .links:hover {
     color: #0f4fb6;
   }
-
 
 
   main .landing {
