@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -60,14 +64,17 @@ header .branding h1 {
   font-family: 'Amarante', cursive;
 }
 
+ul li {
+  list-style:none;
+}
+
 header .branding span {
   margin: 0 0.2em;
-  background: #fff;
+  background: #367df0;
   padding: 10px 19px;
   color: #333;
   border-radius: 50%;
-  color: #0f4fb6;
-  border: dashed 1.5px #0f4fb6;
+  color: #fff;
 
 }
 
@@ -211,6 +218,43 @@ main .landing {
   /* height: 25vh; */
 }
 
+#join .card {
+  margin: 2em 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.card .card-head {
+  background: #e65936;
+  padding: 10px;
+  color: #fff;
+}
+.card .card-body .value{
+  /* border: solid 2px #d3330c; */
+  color: #d3330c;
+  padding: 10px 20px;
+  font-size: 1.8em;
+}
+.card .card-body .price {
+  color: #2ddbb5;
+  font-size: 1.8em;
+}
+
+button {
+  background: #367df0;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  border: transparent;
+  color: #fff;
+  padding: 10px 60px;
+}
+
+.modal-body .card {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.modal-body a{
+  margin: 2% auto;
+}
+
+
 @media all and (max-width: 600px) {
   header {
     padding: 1em 0;
@@ -305,6 +349,8 @@ main .landing {
   header nav .links:hover {
     color: #0f4fb6;
   }
+
+
 
   main .landing {
     background-image: url(../img/home-banner.jpg);
