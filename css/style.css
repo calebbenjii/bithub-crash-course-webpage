@@ -58,7 +58,7 @@ header .container {
   flex-wrap: wrap;
 }
 
-header .branding h1 {
+.branding h1 {
   font-size: 1.8em;
   font-weight: bolder;
   font-family: 'Amarante', cursive;
@@ -68,7 +68,7 @@ ul li {
   list-style:none;
 }
 
-header .branding span {
+.branding span {
   margin: 0 0.2em;
   background: #367df0;
   padding: 10px 19px;
@@ -292,10 +292,52 @@ button {
   border-radius: 5px;
   border: none;
   border: solid 1px #d8d6d6;
+  font-size: 0.8em;
 }
 .form form input[type="submit"] {
   background: #d3330c;
   color: #fff;
+}
+
+.admin-card {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  position: relative;
+}
+.admin-card .card-header {
+  text-align: center;
+}
+.admin-card img {
+  position: relative;
+  margin: 2% auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.reg-form {
+  background: #eee;
+  padding: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.reg-form form input{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border: solid 1px #eee;
+}
+
+.reg-form form input[type="submit"]{
+  background: #367df0;
+  border: none;
+  color: #fff;
+}
+
+#reg {
+  margin-top: 10%
 }
 
 
