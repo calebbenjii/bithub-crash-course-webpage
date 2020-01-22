@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="Web-development-crash-course" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://kaiylebdev.github.io/bithub-crash-course-webpage/" />
+  <meta property="og:image" content="img/img.jpg" />
   <title>Web-development-crash-course</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -63,10 +67,10 @@
       </div>
     </section>
     <section id="learn">
-      <div class="container">
+      <div class="container-fluid">
         <h3 class="text-center">What you will learn</h3>
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row p-0">
+          <div class="col-lg-6 p-0 m-0">
             <div class="img-container">
               
             </div>
@@ -116,18 +120,18 @@
         <div class="row">
           <div class="col-md-9 mx-auto text-center">
             <h3 class="mb-4 text-white">Web Developerment fundamental crash course</h3>
-            <a href="#" class="btn btn-enrol" data-toggle="modal" data-target="#exampleModalLong">Download Syllabus</a>
-            <a href="#" class="btn btn-enrol-a">Enroll Now!!</a>
+            <a href="#" class="btn btn-enrol" data-toggle="modal" data-target="#long">Download Syllabus</a>
+            <a href="#" class="btn btn-enrol-a" data-toggle="long" data-target="#title">Enroll Now!!</a>
           </div>
         </div>
       </div>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal fade" id="long" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Course Module</h5>
+              <h5 class="modal-title" id="title">Course Module</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -307,7 +311,7 @@
                 </div>
               </div>
 
-              <a href="#" class="btn btn-enrol-a bg-danger text-white mx-auto">Enroll Now!!</a>
+              <a href="#" class="btn btn-enrol-a bg-danger text-white mx-auto" data-toggle="lpayment" data-target="#payments">Enroll Now!!</a>
             </div>
           </div>
         </div>
@@ -330,13 +334,56 @@
                 <h4 class="price"><del>N</del>4,000</h4>
 
                 <p>Only 10 seats left</p>
-                <button id="jointag">Join Now!</button>
+                <button id="jointa" data-toggle="modal" data-target="#lpayments">Join Now!</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="lpayments" tabindex="-1" role="dialog" aria-labelledby="payments" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <h5 class="modal-title" id="payments">Course Module</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> -->
+          <div class="modal-body p-0 m-0">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 p-0">
+                  <div class="checkbanner">
+                    <h4 class="header">Enroll now!</h4>
+                    <div class="body">
+                      <h3>GET 80% OFF!</h3>
+                      <p>Learn to code your first web page using the HTML and CSS the most Important languages on the web</p>
+                      <p><b>No coding experience require</b></p>
+                      <h4>Hurry and Save</h4>
+                      <button>Enroll today!</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5 p-0 mx-auto">
+                  <div class="form">
+                    <form id="checkoutForm">
+                      <input type="text" placeholder="Name">
+                      <input type="text" placeholder="Emaill">
+                      <input type="number" placeholder="Tell:(+234)">
+                      <input type="submit" value="checkout">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 
     <footer class="bg-light py-5">
       <div class="container">
